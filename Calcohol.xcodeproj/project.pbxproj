@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B65E2CA21A364C5100441AB3 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65E2CA11A364C5100441AB3 /* MainMenuViewController.m */; };
+		B6AF738F1A34BD25008B9F5F /* WhiskeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF738E1A34BD25008B9F5F /* WhiskeyViewController.m */; };
 		B6E8271A1A2BBC0400EF697D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E827191A2BBC0400EF697D /* main.m */; };
 		B6E8271D1A2BBC0400EF697D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E8271C1A2BBC0400EF697D /* AppDelegate.m */; };
 		B6E827201A2BBC0400EF697D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E8271F1A2BBC0400EF697D /* ViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B65E2CA01A364C5100441AB3 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuViewController.h; path = ../MainMenuViewController.h; sourceTree = "<group>"; };
+		B65E2CA11A364C5100441AB3 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewController.m; path = ../MainMenuViewController.m; sourceTree = "<group>"; };
+		B6AF738D1A34BD25008B9F5F /* WhiskeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiskeyViewController.h; sourceTree = "<group>"; };
+		B6AF738E1A34BD25008B9F5F /* WhiskeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiskeyViewController.m; sourceTree = "<group>"; };
 		B6E827141A2BBC0400EF697D /* Calcohol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calcohol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E827181A2BBC0400EF697D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6E827191A2BBC0400EF697D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +91,10 @@
 				B6E8271C1A2BBC0400EF697D /* AppDelegate.m */,
 				B6E8271E1A2BBC0400EF697D /* ViewController.h */,
 				B6E8271F1A2BBC0400EF697D /* ViewController.m */,
+				B65E2CA01A364C5100441AB3 /* MainMenuViewController.h */,
+				B65E2CA11A364C5100441AB3 /* MainMenuViewController.m */,
+				B6AF738D1A34BD25008B9F5F /* WhiskeyViewController.h */,
+				B6AF738E1A34BD25008B9F5F /* WhiskeyViewController.m */,
 				B6E827211A2BBC0400EF697D /* Main.storyboard */,
 				B6E827241A2BBC0400EF697D /* Images.xcassets */,
 				B6E827261A2BBC0400EF697D /* LaunchScreen.xib */,
@@ -220,8 +230,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6E827201A2BBC0400EF697D /* ViewController.m in Sources */,
+				B6AF738F1A34BD25008B9F5F /* WhiskeyViewController.m in Sources */,
 				B6E8271D1A2BBC0400EF697D /* AppDelegate.m in Sources */,
 				B6E8271A1A2BBC0400EF697D /* main.m in Sources */,
+				B65E2CA21A364C5100441AB3 /* MainMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +358,7 @@
 				INFOPLIST_FILE = Calcohol/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -356,6 +369,7 @@
 				INFOPLIST_FILE = Calcohol/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -412,6 +426,7 @@
 				B6E827391A2BBC0400EF697D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6E8273A1A2BBC0400EF697D /* Build configuration list for PBXNativeTarget "CalcoholTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +435,7 @@
 				B6E8273C1A2BBC0400EF697D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
