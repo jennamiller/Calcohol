@@ -45,7 +45,6 @@
     [self.whiskeyButton.titleLabel setFont:bigFont];
     
     self.title = NSLocalizedString(@"Select Alcolator", @"Select Alcolator");
-    // Do any additional setup after loading the view.
 }
 
 - (void) viewWillLayoutSubviews {
