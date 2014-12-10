@@ -10,6 +10,8 @@
 
 @interface WhiskeyViewController ()
 
+@property UIViewController *tabBarViewController;
+
 @end
 
 @implementation WhiskeyViewController
@@ -26,6 +28,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:0.992 green:0.992 blue:0.588 alpha:1];
 }
+
 
 - (void)sliderValueDidChange:(UISlider *)sender;
 {

@@ -78,6 +78,8 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+
+
 - (void) viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     
@@ -85,6 +87,7 @@
     CGFloat padding = 60;
     CGFloat itemWidth = viewWidth - padding - padding;
     CGFloat itemHeight = 44;
+    
     
     self.beerPercentTextField.frame = CGRectMake(padding, padding, itemWidth, itemHeight);
     
