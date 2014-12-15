@@ -77,8 +77,6 @@
     self.resultLabel.numberOfLines = 0;
     
     self.view.backgroundColor = [UIColor colorWithRed:0.741 green:0.925 blue:0.714 alpha:1];
-    
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 
