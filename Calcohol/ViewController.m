@@ -57,10 +57,12 @@
     self.view.backgroundColor = [UIColor lightGrayColor];
     [_beerPercentTextField setTextColor:[UIColor whiteColor]];
     [_resultLabel setTextColor:[UIColor whiteColor]];
+    [_resultLabel setFont:[UIFont fontWithName:@"AmericanTypewriter-Bold" size:16]];
     
     self.beerPercentTextField.delegate = self;
     
     self.beerPercentTextField.placeholder = NSLocalizedString(@"% Alcohol Content Per Beer", @"Beer Percent Placeholder Text");
+    self.beerPercentTextField.font = [UIFont fontWithName:@"AmericanTypewriter-Bold" size:16];
     
     [self.beerCountSlider addTarget:self action:@selector(sliderValueDidChange:) forControlEvents:UIControlEventValueChanged];
     
@@ -68,6 +70,7 @@
     self.beerCountSlider.maximumValue = 10;
     
     [self.calculateButton setTitle:NSLocalizedString(@"Calculate!", @"Calculate command") forState:UIControlStateNormal];
+    [[self.calculateButton titleLabel] setFont:[UIFont fontWithName:@"AmericanTypewriter-Bold" size:28.0]];
     
     [self.hideKeyboardTapGestureRecognizer addTarget:self action:@selector(tapGestureDidFire:)];
     
@@ -83,22 +86,22 @@
 - (void) viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     
-    CGFloat viewWidth = 320;
+    CGSize sizeOfScreen = [[UIScreen mainScreen] bounds].size;
+    CGFloat width = sizeOfScreen.width;
+    CGFloat height = sizeOfScreen.height;
     CGFloat padding = 60;
-    CGFloat itemWidth = viewWidth - padding - padding;
+    CGFloat itemWidth = width - padding - padding;
     CGFloat itemHeight = 44;
-    
     
     self.beerPercentTextField.frame = CGRectMake(padding, padding, itemWidth, itemHeight);
     
     CGFloat bottomOfTextField = CGRectGetMaxY(self.beerPercentTextField.frame);
     self.beerCountSlider.frame = CGRectMake(padding, bottomOfTextField + padding, itemWidth, itemHeight);
-    
     CGFloat bottomOfSlider = CGRectGetMaxY(self.beerCountSlider.frame);
-    self.resultLabel.frame = CGRectMake(padding, bottomOfSlider + padding, itemWidth, itemHeight * 4);
+    self.resultLabel.frame = CGRectMake(padding, padding, itemWidth, itemHeight * 4);
 
     CGFloat bottomOfLabel = CGRectGetMaxY(self.resultLabel.frame);
-    self.calculateButton.frame = CGRectMake(padding, bottomOfLabel + padding, itemWidth, itemHeight);
+    self.calculateButton.frame = CGRectMake(padding, bottomOfSlider + padding, itemWidth, itemHeight);
     
     
 }
